@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [ 
+                "--model", "deeplabv3plus_resnet50", 
+                "--dataset", "SYNTHIA", 
+                "--enable_vis", 
+                "--vis_port", "28334", 
+                "--gpu_id", "0",  
+                "--lr", "0.01", 
+                "--crop_size", "600", 
+                "--batch_size", "8", 
+                "--output_stride", "16",
+                "--data_root", "/root/Desktop/DeepLabV3Plus-Pytorch-master/datasets/data/cityscapes"
+            ]
+            // "env": {
+            //     "PYTHONPATH":"/root/anaconda3/envs/FSVOS/bin/python"
+            // }
+        }
+    ]
+}
